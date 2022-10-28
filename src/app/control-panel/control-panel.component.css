@@ -1,0 +1,32 @@
+form{
+    margin: auto;
+    float: left;
+}
+
+input, select {
+    margin: 5px;
+    padding: 5px;
+    background-color: #36393e;
+    color: #e6e9ec;
+    border-radius: 5px;
+}
+  
+button, .submit {
+    height: 29px;
+    margin: 5px;
+    border: outset #4f545c;
+    border-radius: 5px;
+    background-color: #36393e;
+    color: #e6e9ec;
+    float: right;
+}
+
+button:hover, .submit:hover {
+    background-color: #494d53;
+    border: outset #4f545c;
+}
+  
+button:active, .submit:active {
+    color: #36393e;
+    border: inset #4f545c;
+}

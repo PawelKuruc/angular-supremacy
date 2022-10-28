@@ -1,0 +1,40 @@
+.main-container {
+    width: 90vw;
+    max-width: 866px;
+    height: 90vh;
+    margin: auto;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+app-control-panel{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+app-todo-area{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+app-done-area{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0px;
+}
