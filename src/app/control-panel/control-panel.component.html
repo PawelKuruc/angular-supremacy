@@ -1,19 +1,27 @@
-<form>
+<form (ngSubmit)="onSubmit()">
     <input 
+        name="name"
         type="text" 
         placeholder="Name"
+        [(ngModel)]="name"
     >
     <input 
+        name="desc"
         type="text" 
         placeholder="Descryption"
+        [(ngModel)]="desc"
     >
     <select
-    > <!--TODO opcje generowane z listy użytkowników-->
-        <option value="no assingnment"> - </option>
-        <option value="Paweł Kuruc">Paweł Kuruc</option>
-        <option value="Eryk Pałasz">Eryk Pałasz</option>
-        <option value="Oskar Anczyk">Oskar Anczyk</option>
-        <option value="Paweł Wolf">Paweł Wolf</option>
+        name="user"
+        [(ngModel)]="user"
+    >
+        <option value="null"> - </option>
+        <option 
+            *ngFor="let users of aviableUsers"
+            [ngValue]="users"
+        >
+            {{users.name}}
+        </option>
     </select>
     <input 
         type="submit" 
@@ -21,4 +29,4 @@
         class="submit"
     >
 </form>
-<button>Clear completed tasks</button>
+<button (click)="clearCompletedTasks()">Clear completed tasks</button>

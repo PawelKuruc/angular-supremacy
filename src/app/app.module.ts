@@ -6,6 +6,7 @@ import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { TodoAreaComponent } from './todo-area/todo-area.component';
 import { DoneAreaComponent } from './done-area/done-area.component';
 import { TaskItemComponent } from './task-item/task-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TaskItemComponent } from './task-item/task-item.component';
     TaskItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
