@@ -9,12 +9,17 @@ import { Task } from '../data-model/Task';
 export class TaskItemComponent implements OnInit {
   @Input() task!: Task;
   mouseOverTopBar: boolean;
+  descExtend: boolean;
 
   constructor() { 
     this.mouseOverTopBar = false;
+    this.descExtend = false;
   }
 
   ngOnInit(): void {
   }
 
+  someButtonFutureImplementation(){
+    alert('Button for future implementation.');
+  }
 }

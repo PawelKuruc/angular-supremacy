@@ -1,9 +1,8 @@
 .content{
-    height: 100px;
+    height: 103px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25px 1fr 15px;
-    
+    grid-template-rows: 25px 1fr 15px; 
 }
 
 .top-bar{
@@ -27,6 +26,7 @@
     grid-row-end: 3;
     padding-left: 5px;
     overflow: hidden;
+    font-size: small;
 }
 
 .bot-controls{
@@ -34,4 +34,26 @@
     grid-row-end: 4;
 }
 
+button{
+    margin-left: 1px;
+    padding: 2px 8px 2px 8px;
+    width: max-content;
+    float: right;
 
+    background-color: #36393e;
+
+
+    font-size: x-small;
+    color: lightgray;
+    border: none;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #494d53;
+}
+
+button:active {
+    border: 1px inset gray;
+    color: gray;
+}

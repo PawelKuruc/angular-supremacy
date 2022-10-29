@@ -53,5 +53,5 @@ export class Task {
         }
     }
 
-    showTaskHistory(){ console.log('[ "'+this.name.toUpperCase()+'" HISTORY ]\n\n'+this.history); }
+    showTaskHistory(){ alert('[ "'+this.name.toUpperCase()+'" HISTORY ]\n\n'+this.history); }
 }

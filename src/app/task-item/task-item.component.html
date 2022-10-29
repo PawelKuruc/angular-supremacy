@@ -1,4 +1,7 @@
-<div class="content">
+<div 
+    class="content"
+    [ngStyle]="{'height': (descExtend) ? 'auto' : '103px'}"
+>
     <div  
         class="top-bar"
         [style.--color]="task.getAssignedUser().color"
@@ -16,7 +19,13 @@
     <div
         class="bot-controls"
     >
-
+        <button
+            (click)="descExtend ? descExtend=false : descExtend=true"
+        >
+            <span *ngIf="!descExtend">extend</span>
+            <span *ngIf="descExtend">hide</span>
+        </button>
+        <button (click)="task.showTaskHistory()">history</button>
+        <button (click)="someButtonFutureImplementation()">something</button>
     </div>
 </div>
-
