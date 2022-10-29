@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeDB } from '../data-model/FakeDB';
+import { Task } from '../data-model/Task';
 
 @Component({
   selector: 'app-done-area',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoneAreaComponent implements OnInit {
 
-  constructor() { }
+  doneList: Task[];
+
+  constructor() {
+    this.doneList = FakeDB.doneTasks;
+  }
 
   ngOnInit(): void {
   }

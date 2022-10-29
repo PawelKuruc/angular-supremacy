@@ -1,3 +1,9 @@
 <div class="area-title">
     done
 </div>
+<ul>
+    <app-task-item 
+        *ngFor="let task of doneList"
+        [task]="task"
+    ></app-task-item>
+</ul>

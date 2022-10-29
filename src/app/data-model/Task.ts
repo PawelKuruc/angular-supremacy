@@ -26,7 +26,13 @@ export class Task {
         this.history += '> "'+this.name+'" task description has been modified.\n\n';
     }
 
-    getAssignedUser(): User | undefined{ return this.assignment; }
+    getAssignedUser(): User{ 
+        if(this.assignment != undefined){
+            return this.assignment;
+        }else{
+            return new User('not assigned','gray');
+        }
+    }
     assign(user: User): boolean{
         if (this.assignment == undefined){
             this.assignment = user;

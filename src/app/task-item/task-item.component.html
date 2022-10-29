@@ -1,1 +1,22 @@
-<p>task-item works!</p>
+<div class="content">
+    <div  
+        class="top-bar"
+        [style.--color]="task.getAssignedUser().color"
+        (mouseover)="mouseOverTopBar=true"
+        (mouseout)="mouseOverTopBar=false"
+    >
+        <span *ngIf="!mouseOverTopBar">{{task.getName()}}</span>
+        <span *ngIf="mouseOverTopBar">{{'\< '+task.getAssignedUser().name+' \>'}}</span>
+    </div>
+    <div 
+        class="description"
+    >
+        {{task.getDescription()}}
+    </div>
+    <div
+        class="bot-controls"
+    >
+
+    </div>
+</div>
+

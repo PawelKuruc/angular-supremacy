@@ -7,3 +7,30 @@
     font-weight: 600;
     border-radius: 2px;
 }
+
+ul {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  
+    column-count: auto;
+    column-gap: 0px;
+    
+    margin: 0;
+    padding: 3px;
+}
+
+app-task-item {
+  height: auto;
+  width: 203px;
+  margin: 3px;
+  box-sizing: border-box;
+
+  background-color: #494d53;
+
+  border: 2px outset #5f656d;
+  border-radius: 5px;
+
+  overflow: clip;
+  display: inline-flex;
+}
