@@ -7,7 +7,8 @@ input, select {
     margin: 5px;
     padding: 5px;
     background-color: #36393e;
-    color: #e6e9ec;
+    color: #bbb;
+    border: inset 2px gray;
     border-radius: 5px;
 }
   
@@ -17,7 +18,7 @@ button, .submit {
     border: outset #4f545c;
     border-radius: 5px;
     background-color: #36393e;
-    color: #e6e9ec;
+    color: #bbb;
     float: right;
 }
 
@@ -27,6 +28,6 @@ button:hover, .submit:hover {
 }
   
 button:active, .submit:active {
-    color: #36393e;
+    color: gray;
     border: inset #4f545c;
 }

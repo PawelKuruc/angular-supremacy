@@ -24,20 +24,20 @@ app-control-panel{
     grid-column-start: 1;
     grid-column-end: 3;
 
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    background-color: #aaa;
+    border: 1px solid #aaa;
     border-radius: 5px;
     padding: 10px;
 }
 
 app-todo-area{
-    border: 1px solid lightgray;
+    border: 1px solid #aaa;
     border-radius: 5px;
     padding: 0px;
 }
 
 app-done-area{
-    border: 1px solid lightgray;
+    border: 1px solid #aaa;
     border-radius: 5px;
     padding: 0px;
 }

@@ -24,7 +24,6 @@ export class ControlPanelComponent implements OnInit {
   onSubmit(){
     if(this.name){
       FakeDB.todoTasks.push(new Task(this.name,this.desc,this.user));
-      console.log(this.user);
     }else{
       alert('Please type something!');
     }
