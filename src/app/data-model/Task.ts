@@ -30,7 +30,7 @@ export class Task {
         if(this.assignment){
             return this.assignment;
         }else{
-            return new User('not assigned','gray');
+            return new User('not assigned','#737373');
         }
     }
     assign(user: User): boolean{

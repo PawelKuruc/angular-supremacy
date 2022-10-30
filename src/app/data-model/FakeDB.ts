@@ -3,10 +3,10 @@ import { User } from "./User";
 
 export abstract class FakeDB{
     static usersList: User[] = [
-        new User('Paweł Kuruc', '#de7a2f'),
+        new User('Paweł Kuruc', '#AE5C1E'),
         new User('Eryk Pałasz', '#386146'),
-        new User('Oskar Anczyk', '#9574e3'),
-        new User('Paweł Wolf', '#12D1B4')
+        new User('Oskar Anczyk', '#815ADD'),
+        new User('Paweł Wolf', '#0A807A')
     ];
 
     static todoTasks: Task[] = [
