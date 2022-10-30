@@ -13,11 +13,13 @@
     </div>
     <div 
         class="description"
+        (mousedown)="$event.stopPropagation()"
     >
         {{task.getDescription()}}
     </div>
     <div
         class="bot-controls"
+        (mousedown)="$event.stopPropagation()"
     >
         <button
             (click)="descExtend ? descExtend=false : descExtend=true"
