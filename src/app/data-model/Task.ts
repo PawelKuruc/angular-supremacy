@@ -10,7 +10,7 @@ export class Task {
         this.name = name;
         this.description = desc;
         this.assignment = user;
-        this.history = ((user == undefined)? '> Task \"'+name+'\" has been created.\n\n' : '> Task "'+name+'" has been created and asigned to '+user.name+'.\n\n');
+        this.history = (user ? '> Task "'+name+'" has been created and asigned to '+user.name+'.\n\n' : '> Task \"'+name+'\" has been created.\n\n');
     }
 
     getName(): string{ return this.name; }
@@ -27,7 +27,7 @@ export class Task {
     }
 
     getAssignedUser(): User{ 
-        if(this.assignment != undefined){
+        if(this.assignment){
             return this.assignment;
         }else{
             return new User('not assigned','gray');
@@ -51,6 +51,14 @@ export class Task {
             this.assignment = undefined;
             this.history += '> "'+this.name+'" task has been dropped by '+previousUser.name+'.\n\n';
         }
+    }
+
+    taskDone(){
+        this.history += '> Task has been done.\n\n';
+    }
+
+    taskUndone(){
+        this.history += '> Task has been taken back from done status.\n\n';
     }
 
     showTaskHistory(){ alert('[ "'+this.name.toUpperCase()+'" HISTORY ]\n\n'+this.history); }

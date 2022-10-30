@@ -1,9 +1,14 @@
 <div class="area-title">
     todo
 </div>
-<ul>
+<ul 
+    cdkDropList
+    [cdkDropListData]="todoList"
+    (cdkDropListDropped)="smthDropped($event)"
+>
     <app-task-item 
         *ngFor="let task of todoList"
         [task]="task"
+        cdkDrag 
     ></app-task-item>
 </ul>

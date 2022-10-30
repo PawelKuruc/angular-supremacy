@@ -1,3 +1,4 @@
+import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { FakeDB } from '../data-model/FakeDB';
 import { Task } from '../data-model/Task';
@@ -18,4 +19,13 @@ export class DoneAreaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  smthDropped(event: CdkDragDrop<Task[]>){
+    transferArrayItem(
+      event.previousContainer.data,
+      event.container.data,
+      event.previousIndex,
+      event.currentIndex
+    );
+    if(event.container != event.previousContainer) FakeDB.doneTasks[event.currentIndex].taskDone();
+  }
 }

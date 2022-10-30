@@ -1,7 +1,15 @@
 .content{
-    min-height: 103px;
+    min-height: 107px;
     width: 100%;
+    margin: 3px;
+    box-sizing: border-box;
+
     display: grid;
+
+    background-color: #494d53;
+    border: 2px outset #5f656d;
+    border-radius: 5px;
+
     grid-template-columns: 1fr;
     grid-template-rows: 25px 1fr 15px; 
 }
@@ -13,8 +21,8 @@
     padding-left: 3px;
     border-radius: 1px;
     background-color: var(--color);
-
     font-weight: 600;
+    overflow: hidden;
 }
 
 .top-bar:hover{

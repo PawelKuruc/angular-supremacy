@@ -21,16 +21,6 @@ ul {
 }
 
 app-task-item {
-    height: auto;
-    width: 203px;
-    margin: 3px;
-    box-sizing: border-box;
-
-    background-color: #494d53;
-
-    border: 2px outset #5f656d;
-    border-radius: 5px;
-
-    overflow: clip;
+    width: 210px;
     display: inline-flex;
-}
+  }

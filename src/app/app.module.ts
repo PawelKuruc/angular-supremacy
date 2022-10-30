@@ -7,6 +7,7 @@ import { TodoAreaComponent } from './todo-area/todo-area.component';
 import { DoneAreaComponent } from './done-area/done-area.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { FormsModule } from '@angular/forms';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
